@@ -1,0 +1,5 @@
+bin/.env
+bin/.dockerenv
+key_env
+node_modules
+.DS_Store

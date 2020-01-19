@@ -1,0 +1,24 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: christmas-project-pod
+  labels:
+    app: christmas-project-app
+spec:
+  containers:
+  - name: christmas-project-cont
+    image: "<IMAGE_NAME>"
+    ports: 
+    - containerPort: 3000
+      protocol: TCP
+    env:
+    - name: GOOGLE_GOLANG_URI   
+      value: "<GOOGLE_GOLANG_URI>"
+    - name: GOOGLE_NODE_URI
+      value: "<GOOGLE_NODE_URI>"
+    - name: AZURE_JAVA_URI
+      value: "<AZURE_JAVA_URI>"
+    - name: AZURE_NODE_URI
+      value: "<AZURE_NODE_URI>"
+
+  restartPolicy: Always

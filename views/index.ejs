@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header: Loading minimal CSS/JS frameworks and resources for responsive web UI-->
+<head>
+  <meta charset="utf-8">
+  <title>Service Caller - Christmas project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+</head>
+<body class="night-body">
+    <div class="section banda1">
+        <div class="container">
+          <div class="row">
+              <div class="one-half column welcome">
+                <br>
+                <h2 class="welcome-header"><b>Bienvenido al Invocador de Functions Multi-Nube</b></h2>
+                <h5 class="welcome-subtitle">IBM CTL Christmas Project </h5>
+                <br>
+                <br>
+                <p class="welcome-detail">Procesamiento de algoritmo de Fibonacci al cuadrado dada una N en Functions de varias nubes.
+                  Elige el valor y da click en Iniciar.
+                </p>
+              </div>
+          </div>
+          <div class="row">
+            <div class="one-half column">&nbsp;</div>
+            <div class="one-half column">
+              <label for="exampleEmailInput">Arreglo de Fibonacci. Valor N:</label>
+              <input class="nbox" type="number" placeholder="8" id="nInput" value="8"></input>
+              <button class="button" id="btnInvoke">Iniciar la invocación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section resultado" id="sectionResultado" style="visibility: hidden;">
+      <div class="container">
+        <div class="row">
+          <div >
+            <br>
+            <b><H2 class="resultado-title">Resultados</H2></b>
+            <h6 class="resultado-title">Invocaciones asíncronas de arreglo al cuadrado de Fibonacci</h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="one-half column value">
+            <h3 class="resultado-nube1">Azure Functions</h3>
+            <h5 class="resultado-tipo ">Runtime Java (Compilado)</h5>
+            <div><div id="msAzureJava" class="resultado-ms">Procesando... </div></div>
+            
+            <label for="exampleMessage">Resultado</label>
+            <textarea class="u-full-width resultado-text" placeholder="NA" id="textAzureJava"></textarea>
+            <h5 class="resultado-tipo ">Runtime Node.js (Interpretado)</h5>
+            <p class="resultado-ms" id="msAzureNode">Procesando...</p>
+            <label for="exampleMessage">Resultado</label>
+            <textarea class="u-full-width resultado-text" placeholder="NA" id="textAzureNode"></textarea>
+          </div>
+          <div class="one-half column value">
+            <h3 class="resultado-nube2">Google Cloud Functions</h3>
+            <h5 class="resultado-tipo ">Runtime Go (Compilado)</h5>
+            <p class="resultado-ms" id="msGoogleGo">Procesando...</p>
+            <label for="exampleMessage">Resultado</label>
+            <textarea class="u-full-width resultado-text" placeholder="NA" id="textGoogleGo"></textarea>
+            <h5 class="resultado-tipo">Runtime Node.js (Interpretado)</h5>
+            <p class="resultado-ms" id="msGoogleNode">Procesando...</p>
+            <label for="exampleMessage">Resultado</label>
+            <textarea class="u-full-width resultado-text" placeholder="NA" id="textGoogleNode"></textarea>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="./js/invoke.js" type="text/javascript"></script>
+</body>
+</html>
